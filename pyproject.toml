@@ -1,0 +1,17 @@
+[project]
+name = "funtime-prompt-manager"
+version = "0.1.0"
+description = "Prompt manager with system tray integration"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+
+dependencies = [
+  "pystray>=0.18.0",
+  "Pillow>=9.0.0,<12.0.0", # pin <12 to avoid streamlit conflict; adjust if you need Pillow 12
+  "pyperclip>=1.8.0"
+]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
